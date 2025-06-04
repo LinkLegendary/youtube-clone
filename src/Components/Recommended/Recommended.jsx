@@ -43,7 +43,7 @@ useEffect(() => {
     <div className="recommended">
       {apiData.map((item,index) => {
           return(
-         <Link to={`/video/${item.snippet.categoryId}/${item.id}`} className="side-video-list" key={index}>
+         <Link to={`/youtube-clone/video/${item.snippet.categoryId}/${item.id}`} className="side-video-list" key={index}>
         <img src={item.snippet.thumbnails.medium.url} alt="" />
         <div className="vid-info">
           <h4>{item.snippet.title}</h4>
